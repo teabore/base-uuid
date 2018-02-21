@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "Tibor Szanto",
+    "email": "teabore@gmail.com",
+    "url": "https://github.com/teabore"
+  },
+  "description": "UUID shortener",
+  "dependencies": {
+    "base-x": "^3.0.4"
+  },
+  "homepage": "https://github.com/teabore/base-uuid",
+  "keywords": [
+    "uuid",
+    "shortener"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "base-uuid",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teabore/base-uuid.git"
+  },
+  "version": "0.1.1"
+}
