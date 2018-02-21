@@ -1,4 +1,7 @@
 # base-uuid
+[![NPM Package](https://img.shields.io/npm/v/base-uuid.svg?style=flat-square)](https://www.npmjs.org/package/base-uuid)
+[![Build Status](https://img.shields.io/travis/teabore/base-uuid.svg?branch=master&style=flat-square)](https://travis-ci.org/teabore/base-uuid)
+
 Simple UUID shortener
 
 ## Installation
@@ -36,12 +39,15 @@ Creates a shortened UUID string.
 `const uuid = baseN.decode(str)`
 Decodes a shortened UUID.
 
+`const uuid = baseN.decodePlain(str)`
+Like `decode` but produces UUID without dashes.
+
 `baseN.base`
-Radix of the shortener, integer between 16..64.
+Radix of the shortener, integer between 16...64.
 
 ## Credit
 
 Based on [uuid-base62](https://github.com/dmarcelino/uuid-base62)
 
 ## License
-MIT
+[MIT](LICENSE)

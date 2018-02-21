@@ -20,10 +20,12 @@ test('Encodes and decodes UUIDs', function(t) {
   const encoded2 = base62.encode(uuid2); // 7N42dgm5pw9utfkXp3nwyH
   const decoded1 = base62.decode(encoded1);
   const decoded2 = base62.decode(encoded2);
+  const plain = base62.decodePlain(encoded1);
 
   t.equal(base62.base, 62);
   t.equal(decoded1, uuid1);
   t.equal(decoded2, uuid2);
+  t.equal(plain.length, 32);
   t.end();
 });
 
