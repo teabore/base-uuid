@@ -1,7 +1,7 @@
 # base-uuid
 Simple UUID shortener
 
-## Instalation
+## Installation
 
 ```shell
 npm install base-uuid
