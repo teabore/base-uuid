@@ -7,7 +7,7 @@ const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-'
 const format = /(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})/;
 const size = 32;
 
-const pad = (str, size) => str.padStart ? str.padStart(size, '0') : str + ('0').repeat(size - str.length);
+const pad = (str, size) => str.padStart ? str.padStart(size, '0') : ('0').repeat(size - str.length) + str;
 
 const _encode = (baseN, uuid) => {
   const buffer = Buffer.from(uuid.replace(/-/g, ''), 'hex');
