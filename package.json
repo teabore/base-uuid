@@ -8,6 +8,9 @@
   "dependencies": {
     "base-x": "^3.0.4"
   },
+  "devDependencies": {
+    "tape": "^4.9.0"
+  },
   "homepage": "https://github.com/teabore/base-uuid",
   "keywords": [
     "uuid",
@@ -20,5 +23,8 @@
     "type": "git",
     "url": "git://github.com/teabore/base-uuid.git"
   },
-  "version": "0.1.2"
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "version": "0.1.3"
 }
