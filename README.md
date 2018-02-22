@@ -1,4 +1,5 @@
 # base-uuid
+[![GitHub license](https://img.shields.io/github/license/teabore/base-uuid.svg?style=flat-square)](https://github.com/teabore/base-uuid)
 [![NPM Package](https://img.shields.io/npm/v/base-uuid.svg?style=flat-square)](https://www.npmjs.org/package/base-uuid)
 [![Build Status](https://img.shields.io/travis/teabore/base-uuid.svg?branch=master&style=flat-square)](https://travis-ci.org/teabore/base-uuid)
 
