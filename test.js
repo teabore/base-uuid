@@ -1,12 +1,12 @@
 const test = require('tape');
-const baseUuid = require('./');
+const baseUuid = require('.');
 
 const uuid1 = '00000000-0000-4000-8000-000000000000';
 const uuid2 = 'ffffffff-ffff-4fff-bfff-ffffffffffff';
 
 const base62 = baseUuid(62); // Create a base62 encoder/decoder
 
-test('baseUuid typechecks', function(t) {
+test('baseUuid typechecks', (t) => {
   t.equal(typeof baseUuid, 'function');
   t.equal(typeof base62.encode, 'function');
   t.equal(typeof base62.decode, 'function');
@@ -15,7 +15,7 @@ test('baseUuid typechecks', function(t) {
   t.end();
 });
 
-test('Encodes and decodes UUIDs', function(t) {
+test('Encodes and decodes UUIDs', (t) => {
   const encoded1 = base62.encode(uuid1); // 1vGeH72LxVtxKg
   const encoded2 = base62.encode(uuid2); // 7N42dgm5pw9utfkXp3nwyH
   const decoded1 = base62.decode(encoded1);
@@ -29,12 +29,12 @@ test('Encodes and decodes UUIDs', function(t) {
   t.end();
 });
 
-test('Throws with bad radix', function (t) {
+test('Throws with bad radix', (t) => {
   t.plan(2);
-  t.throws(function () {
+  t.throws(() => {
     baseUuid(8);
   });
-  t.throws(function () {
+  t.throws(() => {
     baseUuid(68);
   });
 });
