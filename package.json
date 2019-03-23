@@ -6,10 +6,10 @@
   },
   "description": "UUID shortener",
   "dependencies": {
-    "base-x": "^3.0.4"
+    "base-x": "^3.0.5"
   },
   "devDependencies": {
-    "tape": "^4.9.0"
+    "tape": "^4.10.1"
   },
   "homepage": "https://github.com/teabore/base-uuid",
   "keywords": [
